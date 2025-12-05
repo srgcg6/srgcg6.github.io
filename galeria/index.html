@@ -4,72 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheUrbanGarage - Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./images/favicon.ico">
+    <title>TheUrbanGarage - Galería</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/favicon.ico">
     <script src="https://kit.fontawesome.com/ba404f620a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <img src="./images/logoColorTransparente.png">
+        <img src="../images/logoColorTransparente.png">
         <h1>TheUrbanGarage</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#" id="pestañaActual">Inicio</a></li>
-            <li><a href="./nosotros/">Nosotros</a></li>
-            <li><a href="./servicios/">Servicios</a></li>
-            <li><a href="./galeria/">Galería</a></li>
-            <li><a href="./contacto/">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../nosotros/">Nosotros</a></li>
+            <li><a href="../servicios/">Servicios</a></li>
+            <li><a href="#" id="pestañaActual">Galería</a></li>
+            <li><a href="../contacto/">Contacto</a></li>
         </ul>
     </nav>
-    <div class="container-wrapper">
-        <main>
-            <section id="anclaInicio">
-                <article class="bloqueInicio">
-                    <h1>Inicio</h1>
-                    <h2>TheUrbanGarage: Agilidad y claridad sin complicaciones</h2>
-                    <p>En TheUrbanGarage encontrarás un servicio de mecánica ágil, claro y sin complicaciones. Nos
-                        centramos en lo esencial: diagnósticos rápidos, soluciones eficaces y una atención transparente
-                        que te permita confiar plenamente en cada reparación. Trabajamos con compromiso y cercanía para
-                        que vuelvas a la carretera cuanto antes y con la tranquilidad de saber que tu vehículo está en
-                        buenas manos.</p>
-                    <p>Realizamos todo tipo de reparaciones y mantenimientos ofreciendo rapidez y sinceridad. ¡Tu coche,
-                        tiempo y dinero te lo agradecerán!</p>
+    <div class="container-wrapper gallery-mixed-layout">
+        <div class="gallery-header-row">
+            <div class="gallery-title-container">
+                <section id="anclaGaleria">
+                    <article class="bloqueInicio">
+                        <h1>Galería</h1>
+                        <p>Aquí puede ver un trozo de nuestra historia y del proceso o resultado de trabajos realizados
+                            por nosotros.</p>
+                    </article>
+                </section>
+            </div>
+            <aside>
+                <h1>Índice</h1>
+                <ul>
+                    <li><a href="#anclaGaleria">Galería</a></li>
+                    <li><a href="#anclaCategorias">Categorías</a></li>
+                    <li><a href="#anclaFilosofia">Nuestra filosofía</a></li>
+                    <li><a href="#anclaRedesSociales">Redes sociales</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="gallery-images-container">
+            <section>
+                <article class="bloqueImagenes">
+                    <img src="../images/arreglandoBMW.JPEG">
+                    <img src="../images/atandoBMW.JPEG">
+                    <img src="../images/bmwHalloween.JPEG">
+                    <img src="../images/c3Halloween.JPEG">
+                    <img src="../images/detailing.png">
+                    <img src="../images/egr.JPEG">
+                    <img src="../images/fotoQuedada.JPEG">
+                    <img src="../images/fotoSierra.JPEG">
+                    <img src="../images/fotoTodos.JPEG">
+                    <img src="../images/interiorLeon.JPEG">
+                    <img src="../images/leonFoso.JPEG">
+                    <img src="../images/motorAntes.JPEG">
+                    <img src="../images/motorAudi.JPEG">
+                    <img src="../images/pantalla.png">
+                    <img src="../images/parachoquesBMW.JPEG">
+                    <img src="../images/personalizacion.png">
+                    <img src="../images/recambio.JPEG">
+                    <img src="../images/tapaBalancines.JPEG">
+                    <video src="../images/arrastrandoBMW.MOV" controls></video>
+                    <video src="../images/leonHalloween.mov" controls></video>
+                    <video src="../images/limpiandoIbiza.mov" controls></video>
+                    <video src="../images/videoQuedada.mov" controls></video>
                 </article>
             </section>
+        </div>
+    </div>
+
+    <div class="container-wrapper">
+        <main>
             <section id="anclaCategorias">
                 <article class="bloqueImagenes">
                     <h1>Categorías</h1>
                     <figure>
-                        <img src="./images/tapaBalancines.JPEG">
+                        <img src="../images/tapaBalancines.JPEG">
                         <figcaption>Reparación de motores</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/pantalla.png">
+                        <img src="../images/pantalla.png">
                         <figcaption>Instalaciones eléctricas</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/egr.JPEG">
+                        <img src="../images/egr.JPEG">
                         <figcaption>Mantenimiento y limpieza</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/personalizacion.png">
+                        <img src="../images/personalizacion.png">
                         <figcaption>Personalización y car audio</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/detailing.png">
+                        <img src="../images/detailing.png">
                         <figcaption>Detailing de interiores</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/recambio.JPEG">
+                        <img src="../images/recambio.JPEG">
                         <figcaption>¡Y mucho más!</figcaption>
                     </figure>
                 </article>
             </section>
             <section id="anclaFilosofia">
-                <article class="bloqueTexto">
+                <article class="bloqueTexto" id="anclaContacto">
                     <h1>Nuestra filosofía</h1>
                     <p>En nuestro taller creemos que un buen servicio de mecánica no tiene por qué ser complicado ni
                         lento. Nos especializamos en mantenimiento y reparaciones esenciales, ofreciendo soluciones
@@ -88,8 +127,8 @@
                 </article>
                 <article class="bloqueTexto">
                     <p>Ven a pedir presupuesto o contacta con nosotros para cualquier consulta o cita en la pestaña de
-                        <a href="./contacto/" class="estiloEnlaces">Contacto</a>.<br><br>Para consultar precios de
-                        reparaciones y mantenimiento habitual puede acceder a la pestaña de <a href="./servicios/"
+                        <a href="../contacto/" class="estiloEnlaces">Contacto</a>.<br><br>Para consultar precios de
+                        reparaciones y mantenimiento habitual puede acceder a la pestaña de <a href="../servicios/"
                             class="estiloEnlaces">Servicios</a>.
                     </p>
                     <div class="centrar">
@@ -101,15 +140,6 @@
                 </article>
             </section>
         </main>
-        <aside>
-            <h1>Índice</h1>
-            <ul>
-                <li><a href="#anclaInicio">Inicio</a></li>
-                <li><a href="#anclaCategorias">Categorías</a></li>
-                <li><a href="#anclaFilosofia">Nuestra filosofía</a></li>
-                <li><a href="#anclaRedesSociales">Redes sociales</a></li>
-            </ul>
-        </aside>
     </div>
     <footer id="anclaRedesSociales">
         <a href="https://www.instagram.com/theurbangarage_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>

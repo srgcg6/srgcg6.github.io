@@ -4,72 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheUrbanGarage - Inicio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./images/favicon.ico">
+    <title>TheUrbanGarage - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/favicon.ico">
     <script src="https://kit.fontawesome.com/ba404f620a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <img src="./images/logoColorTransparente.png">
+        <img src="../images/logoColorTransparente.png">
         <h1>TheUrbanGarage</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#" id="pestañaActual">Inicio</a></li>
-            <li><a href="./nosotros/">Nosotros</a></li>
-            <li><a href="./servicios/">Servicios</a></li>
-            <li><a href="./galeria/">Galería</a></li>
-            <li><a href="./contacto/">Contacto</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../nosotros/">Nosotros</a></li>
+            <li><a href="../servicios/">Servicios</a></li>
+            <li><a href="../galeria/">Galería</a></li>
+            <li><a href="#" id="pestañaActual">Contacto</a></li>
         </ul>
     </nav>
     <div class="container-wrapper">
         <main>
-            <section id="anclaInicio">
+            <section id="anclaContacto">
                 <article class="bloqueInicio">
-                    <h1>Inicio</h1>
-                    <h2>TheUrbanGarage: Agilidad y claridad sin complicaciones</h2>
-                    <p>En TheUrbanGarage encontrarás un servicio de mecánica ágil, claro y sin complicaciones. Nos
-                        centramos en lo esencial: diagnósticos rápidos, soluciones eficaces y una atención transparente
-                        que te permita confiar plenamente en cada reparación. Trabajamos con compromiso y cercanía para
-                        que vuelvas a la carretera cuanto antes y con la tranquilidad de saber que tu vehículo está en
-                        buenas manos.</p>
-                    <p>Realizamos todo tipo de reparaciones y mantenimientos ofreciendo rapidez y sinceridad. ¡Tu coche,
-                        tiempo y dinero te lo agradecerán!</p>
+                    <h1>Contacto</h1>
+                    <p>En este formulario podrá contarnos lo que le sucede a su coche para que podamos ayudarle lo antes
+                        posible. Solamente tendrá que facilitarnos sus datos para contactar con usted y resolver su
+                        caso.</p>
+                </article>
+            </section>
+            <section>
+                <article class="bloqueContacto">
+                    <form action="../hecho/" method="post">
+                        <label for="nombre"><strong>Nombre completo:</strong></label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        <label for="email"><strong>Email:</strong></label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="telefono"><strong>Teléfono:</strong></label><br>
+                        <input type="tel" id="telefono" name="telefono" required><br><br>
+                        <label for="motivo"><strong>Motivo del contacto:</strong></label><br>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="presupuesto">Solicitar presupuesto</option>
+                            <option value="cita">Pedir cita</option>
+                            <option value="informacion">Solicitar información</option>
+                            <option value="otro">Otro</option>
+                        </select><br><br>
+                        <label for="mensaje"><strong>Mensaje:</strong></label><br>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                        <label>
+                            <input type="checkbox" name="privacidad" id="politicaPrivacidad" required>
+                            Acepto la política de privacidad
+                        </label><br><br>
+                        <button type="submit">Enviar</button>
+                    </form>
                 </article>
             </section>
             <section id="anclaCategorias">
                 <article class="bloqueImagenes">
                     <h1>Categorías</h1>
                     <figure>
-                        <img src="./images/tapaBalancines.JPEG">
+                        <img src="../images/tapaBalancines.JPEG">
                         <figcaption>Reparación de motores</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/pantalla.png">
+                        <img src="../images/pantalla.png">
                         <figcaption>Instalaciones eléctricas</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/egr.JPEG">
+                        <img src="../images/egr.JPEG">
                         <figcaption>Mantenimiento y limpieza</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/personalizacion.png">
+                        <img src="../images/personalizacion.png">
                         <figcaption>Personalización y car audio</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/detailing.png">
+                        <img src="../images/detailing.png">
                         <figcaption>Detailing de interiores</figcaption>
                     </figure>
                     <figure>
-                        <img src="./images/recambio.JPEG">
+                        <img src="../images/recambio.JPEG">
                         <figcaption>¡Y mucho más!</figcaption>
                     </figure>
                 </article>
             </section>
             <section id="anclaFilosofia">
-                <article class="bloqueTexto">
+                <article class="bloqueTexto" id="anclaContacto">
                     <h1>Nuestra filosofía</h1>
                     <p>En nuestro taller creemos que un buen servicio de mecánica no tiene por qué ser complicado ni
                         lento. Nos especializamos en mantenimiento y reparaciones esenciales, ofreciendo soluciones
@@ -88,9 +110,8 @@
                 </article>
                 <article class="bloqueTexto">
                     <p>Ven a pedir presupuesto o contacta con nosotros para cualquier consulta o cita en la pestaña de
-                        <a href="./contacto/" class="estiloEnlaces">Contacto</a>.<br><br>Para consultar precios de
-                        reparaciones y mantenimiento habitual puede acceder a la pestaña de <a href="./servicios/"
-                            class="estiloEnlaces">Servicios</a>.
+                        <a href="../contacto/">Contacto</a>.<br><br>Para consultar precios de reparaciones y
+                        mantenimiento habitual puede acceder a la pestaña de <a href="../servicios/">Servicios</a>.
                     </p>
                     <div class="centrar">
                         <iframe
@@ -104,7 +125,7 @@
         <aside>
             <h1>Índice</h1>
             <ul>
-                <li><a href="#anclaInicio">Inicio</a></li>
+                <li><a href="#anclaContacto">Contacto</a></li>
                 <li><a href="#anclaCategorias">Categorías</a></li>
                 <li><a href="#anclaFilosofia">Nuestra filosofía</a></li>
                 <li><a href="#anclaRedesSociales">Redes sociales</a></li>
