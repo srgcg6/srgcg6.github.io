@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Sergio Cortés García - Inicio</title>
+    <link rel="icon" type="image/x-icon" href="assets/nuclearDisarment.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <header class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6 col-xs-12">
+          <nav>
+            <div id="menu-toggle">
+              <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <div class="cross">
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <ul class="main-nav">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="#sobreMi">Sobre mí</a></li>
+              <li><a href="mailto:sergiocortes1603@gmail.com">Contacto</a></li>
+            </ul>
+          </nav>
+          <div class="hero-text">
+            <h1><span>Bienvenido</span><br/>Soy Sergio Cortés</h1>
+            <h3>Estudiante de informática en el I.E.S. Politécnico Hermenegildo Lanz</h3>
+            <a href="#sobreMi" class="btn btn-lg btn-info">Sobre mí</a>
+            <ul class="social-links">
+              <li class="label">Mis redes sociales</li>
+              <li>
+                <a href="https://www.linkedin.com/in/sergio-cortes-1603-spain/"><img src="assets/linkedin.png"/></a>
+              </li>
+              <li>
+                <a href="https://github.com/srgcg6"><img src="assets/github.png"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section class="case-study">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="sub-heading">Sobre mí</h4>
+            <h1 class="heading purple">
+              <span class="purple" id="sobreMi">Mis estudios</span>
+            </h1>
+            <div class="swiper-container client-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-2.png" class="client-logo"/>
+                  <h3 class="text-left title">
+                    Educación Secundaria Obligatoria
+                  </h3>
+                  <p class="text-left tag">I.E.S. Escultor Sánchez Mesa, Granada</p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-1.png" class="client-logo"/>
+                  <h3 class="text-left title">
+                  Certificados de CISCO sobre Linux, redes y Packet Tracer
+                  </h3>
+                  <p class="text-left tag">I.E.S. Politécnico Hermenegildo Lanz, Granada</p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-3.png" class="client-logo"/>
+                  <h3 class="text-left title">
+                    Grado Medio de Sistemas Microinformáticos y Redes
+                  </h3>
+                  <p class="text-left tag">I.E.S. Politécnico Hermenegildo Lanz, Granada</p>          
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-4.png" class="client-logo"/>
+                  <h3 class="text-left title">
+                    Practicas presenciales en Hitachi Rail GTS Deutschland
+                  </h3>
+                  <p class="text-left tag">Schützenstraße 25, Berlín, Alemania</p>          
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-md-12 text-center">
+            <h1>Sergio<br/><span>Cortés García</span></h1>
+            <ul class="social-links">
+              <li>
+                <a href="https://www.linkedin.com/in/sergio-cortes-1603-spain/"><img src="assets/linkedin.png"/></a>
+              </li>
+              <li>
+                <a href="https://github.com/srgcg6"><img src="assets/github.png"/></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script>
+      var swiper1 = new Swiper(".client-swiper", {
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        spaceBetween: 60,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: ".swiper-pagination",
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".testimonial-swiper", {
+        slidesPerView: 3,
+        pagination: ".swiper-pagination",
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        time: 1000,
+      });
+      $("#menu-toggle").click(function () {
+        $(this).toggleClass("open"), $(".main-nav").toggleClass("show-it");
+      });
+    </script>
+  </body>
+</html>
